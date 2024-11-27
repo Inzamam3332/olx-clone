@@ -1,0 +1,78 @@
+{
+  "ad": [
+    {
+      "id": "bce8",
+      "category": "Mobiles",
+      "subcategory": "Tablets",
+      "title": "Google Pixel Mobile 12/256",
+      "productPrice": "654345",
+      "description": "But Google's phones have always shined for their clean, slick software, and that once again applies to the Pixel 9 series. Pixels are also among the first to get new software updates, making them an ideal choice for those who want to get their hands on the latest version of Android first.",
+      "userName": "Inzamam",
+      "number": "6543345654",
+      "brand": "googlepixel",
+      "condition": "new",
+      "location": "muridke",
+      "images": [
+        "https://res.cloudinary.com/dgek9w0hh/image/upload/v1728280876/bwtvgarzucmahim8waod.jpg"
+      ],
+      "createdAt": "2024-10-07 11:01:18"
+    }
+  ],
+  "vehicle": [
+    {
+      "id": "30bf",
+      "category": "Vehicles",
+      "subcategory": "Cars",
+      "title": "Corolla",
+      "productPrice": "345677",
+      "description": "ndnciufniuefnuc",
+      "userName": "Inzamam",
+      "number": "2345678765",
+      "brand": "honda",
+      "condition": "new",
+      "location": "islamabad",
+      "images": [
+        "https://res.cloudinary.com/dgek9w0hh/image/upload/v1728068283/pw2gqsjklaqkh7wyeerf.jpg"
+      ],
+      "createdAt": "2024-10-04 23:58:06"
+    },
+    {
+      "id": "0faa",
+      "category": "Vehicles",
+      "subcategory": "Cars",
+      "title": "Cars",
+      "productPrice": "6544443",
+      "description": "djcndisjfcdixscnds ",
+      "userName": "Inzamam",
+      "number": "87643234567",
+      "brand": "audi",
+      "condition": "used",
+      "location": "karachi",
+      "images": [
+        "https://res.cloudinary.com/dgek9w0hh/image/upload/v1728562937/yklobsttjmbsrmoenjgh.jpg",
+        "https://res.cloudinary.com/dgek9w0hh/image/upload/v1728562938/qmmmofsbontfppcxrqls.jpg",
+        "https://res.cloudinary.com/dgek9w0hh/image/upload/v1728562941/y5nu8ttp7z7dzhuzxwnz.jpg"
+      ],
+      "createdAt": "2024-10-10 17:22:22"
+    }
+  ],
+  "bikes": [
+    {
+      "id": "a841",
+      "category": "Bikes",
+      "subcategory": "Standard",
+      "title": "Heavy Bike Ninja R2",
+      "productPrice": "543455",
+      "description": "But, most weight conscious people aren't bringing their bikes down to 15 pounds because down at that weight, the handling gets very sketchy. 17 - 17.5 pounds is the normal range.",
+      "userName": "Inzmam",
+      "number": "765433456",
+      "brand": "heavyBike",
+      "condition": "new",
+      "location": "gujranwala",
+      "images": [
+        "https://res.cloudinary.com/dgek9w0hh/image/upload/v1728284258/es14cyl0kgletsrgb7o6.jpg"
+      ],
+      "createdAt": "2024-10-07 11:57:40"
+    }
+  ]
+}

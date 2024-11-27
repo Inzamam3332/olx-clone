@@ -1,0 +1,36 @@
+.cat-sub {
+  display: flex;
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+  gap: 20%;
+}
+
+.form-main {
+  margin: 20px 0px 20px 100px;
+}
+.input-price {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+  height: 40px;
+  width: 350px;
+}
+.post-button {
+  background-color: #002f34;
+  color: white;
+  margin: 30px 60px 0px 0px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.ul-li {
+  padding: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.ul-li :hover {
+  color: black;
+}

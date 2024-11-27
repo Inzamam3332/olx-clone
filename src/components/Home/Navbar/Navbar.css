@@ -1,0 +1,32 @@
+/* Navbar.css */
+.logo img {
+  height: 30px;
+}
+
+.menu {
+  font-family: "Roboto Serif", serif;
+
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 100px;
+  border-bottom: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+/* .menu :hover {
+  color: lightpink;
+  text-decoration: none;
+} */
+.menu-item :hover {
+  color: rgb(252, 163, 176);
+}
+.ant-menu-item-selected {
+  color: black !important; /* Keep text color black */
+}
+
+.ant-menu-item::after {
+  display: none;
+}

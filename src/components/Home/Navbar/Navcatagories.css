@@ -1,0 +1,24 @@
+.custom-select .ant-select-selector {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.custom-select .ant-select-focused .ant-select-selector {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.custom-select {
+  font-family: "Roboto Serif", serif;
+}
+.custom-select .ant-select-selection-item {
+  font-weight: bold;
+}
+.custom-select .ant-select-arrow {
+  font-weight: bold; /* Bold the dropdown arrow */
+  color: black; /* Set color to black */
+  font-size: 15px;
+}

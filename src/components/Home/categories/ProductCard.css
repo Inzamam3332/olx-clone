@@ -1,0 +1,10 @@
+.ant-card-body {
+  padding: 15px !important;
+}
+.ant-card .ant-card-cover > * {
+  height: 190px;
+  object-fit: cover;
+}
+.but-del :hover {
+  color: red;
+}

@@ -1,0 +1,107 @@
+import React from "react";
+import { Row, Col } from "antd";
+import { useState, useEffect } from "react";
+import ProductCard from "./ProductCard";
+import { RightOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
+const Bikes = ({ searchTerm }) => {
+  const [Bike, setBike] = useState([]);
+  const [viewMore, setViewMore] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchBike = async () => {
+      try {
+        const res = await fetch(
+          `http://localhost:7000/bikes?_limit=${viewMore ? 100 : 4}`
+        );
+        const bikedata = await res.json();
+        // console.log(data);
+        setBike(bikedata);
+      } catch (error) {
+        console.log("Error fetching data", error);
+      }
+    };
+
+    fetchBike();
+  }, [viewMore]);
+  const handleDelete = async (id) => {
+    try {
+      // Send DELETE request to the server
+      await fetch(`http://localhost:7000/bikes/${id}`, {
+        method: "DELETE",
+      });
+
+      // Remove the ad from the state
+      setBike(Bike.filter((ad) => ad.id !== id));
+    } catch (error) {
+      console.log("Error deleting ad", error);
+    }
+  };
+  useEffect(() => {
+    setSelectedCard(null);
+  }, []);
+  useEffect(() => {
+    if (selectedCard) {
+      navigate("/info", {
+        state: {
+          selectedCard,
+        },
+      });
+    }
+  }, [selectedCard]);
+  const setCardInfo = (card) => {
+    setSelectedCard(card);
+  };
+  return (
+    <div
+      id="bike-section"
+      style={{ padding: "0px 5px 0px 5px", overflowX: "hidden" }}
+    >
+      <div style={{ marginTop: 40, marginBottom: 10 }}>
+        <Row>
+          <Col style={{ fontWeight: "bolder", fontSize: 23 }} span={12}>
+            Bikes & MotorCycles
+          </Col>
+          <Col
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              paddingRight: 8,
+              color: "blueviolet",
+              fontWeight: "bolder",
+              fontSize: 15,
+              paddingTop: 5,
+              cursor: "pointer",
+            }}
+            span={12}
+            onClick={() => setViewMore(!viewMore)}
+          >
+            {viewMore ? "View Less" : "View more"}
+            <RightOutlined style={{ paddingBottom: 6, paddingLeft: 9 }} />
+          </Col>
+        </Row>
+      </div>
+
+      <Row gutter={[16, 16]}>
+        {Bike.filter((product) =>
+          product.title.toLowerCase().includes(searchTerm.toLowerCase())
+        ).map((product, index) => (
+          <Col key={index} span={6} onClick={() => setCardInfo(product)}>
+            <ProductCard
+              id={product.id}
+              image={product.images}
+              title={product.title}
+              price={product.productPrice}
+              location={product.location}
+              time={product.createdAt}
+            />
+          </Col>
+        ))}
+      </Row>
+    </div>
+  );
+};
+
+export default Bikes;

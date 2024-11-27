@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto Serif", serif;
+}
+
+/* Header Section  */
+.olx {
+  height: 55px;
+  width: 55px;
+}
+.header-main {
+  display: flex;
+  margin: 0px 110px 0px 110px;
+  gap: 35px;
+}
+.motor {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+.property {
+  display: flex;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.header-down {
+  font-family: "Roboto Serif", serif;
+
+  display: flex;
+  margin: 10px 100px 3px 100px;
+  gap: 17px;
+}
+.head-location {
+  font-family: "Roboto Serif", serif;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid rgb(224, 213, 213);
+  height: 50px;
+  width: 300px;
+  padding-left: 10px;
+  gap: 10px;
+}
+.header-center {
+  font-family: "Roboto Serif", serif;
+
+  display: flex;
+  align-items: center;
+}
+.header-center input {
+  font-family: "Roboto Serif", serif;
+  height: 50px;
+  width: 500px;
+  font-size: 15px;
+  border: 1px solid rgb(224, 213, 213);
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+}
+.header-right {
+  display: flex;
+  padding-top: 12px;
+}
+.header-right Button {
+  font-family: "Roboto Serif", serif;
+
+  border: none;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.my-custom-button {
+  text-decoration: underline;
+}
+.my-custom-button:hover {
+  color: black !important;
+  text-decoration: none;
+  border: none;
+}
+.my-custom-sell-button {
+  color: black !important;
+  text-decoration: none;
+  border: none;
+}
+.header-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:hover {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.ant-select-selector {
+  border: none !important;
+  box-shadow: none !important;
+}
