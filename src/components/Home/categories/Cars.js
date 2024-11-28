@@ -75,7 +75,7 @@ const Cars = ({ searchTerm }) => {
               paddingRight: 8,
               color: "blueviolet",
               fontWeight: "bolder",
-              fontSize: 16,
+              fontSize: 15,
               paddingTop: 5,
               cursor: "pointer",
             }}
